@@ -1,0 +1,13 @@
+.Footer {
+    padding: 15px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+.Thumb {
+    width: 55px;
+    height: auto;
+    display: line;
+    padding: 7px;
+}
