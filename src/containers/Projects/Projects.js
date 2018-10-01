@@ -30,7 +30,7 @@ class Projects extends Component {
         rapid: {
             heading: "Rapid Exchange",
             img: "rapid",
-            text: "In order to round out my web development knowledge, I'm currently working on an educational application that will help students with dyslexia learn to recognize and blend together individual phonemes, or letter sounds. It uses Node.js on the backend and React with Redux on the frontend. Authentication is handled by Google&#8217s oAuth and user data is stored and accessed using Mongoose and MongoDB.",
+            text: "In order to round out my web development knowledge, I'm currently working on an educational application that will help students with dyslexia learn to recognize and blend together individual phonemes, or letter sounds. It uses Node.js on the backend and React with Redux on the frontend. Authentication is handled by Google's OAuth and user data is stored and accessed using Mongoose and MongoDB.",
             languages: "Javascript, React, Redux, Node, MongoDB",
             appUrl: "",
             buttonValue: "Run App",

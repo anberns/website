@@ -1,13 +1,11 @@
 .Footer {
     padding: 15px;
     text-align: center;
-    background: #ddd;
-}
-
-
-.Thumb {
-    width: 55px;
-    height: auto;
+    background: #ADAFB5;
     display: line;
-    padding: 7px;
 }
+.white {
+    color: white;
+    cursor: pointer;
+}
+

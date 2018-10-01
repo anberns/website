@@ -16,6 +16,9 @@ class App extends Component {
     }
     this.setState({home: homeVar});
   }
+  componentWillMount() {
+    document.title = "Projects";
+  }
 
   render() {
 
@@ -26,7 +29,6 @@ class App extends Component {
     homepage = (
       <Aux>
         <Homepage clicked={this.homepageClickHandler}/>
-        
       </Aux>
     )
   }
