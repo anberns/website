@@ -9,8 +9,14 @@ const project = ( props ) => {
         image = Images.graphical;
     } else if (props.data.img === "monitor") {
         image = Images.monitor;
-    } else {
+    } else if (props.data.img === "rapid") {
         image = Images.rapid;
+    } else if (props.data.img === "freestyle_spa") {
+        image = Images.freestyle_spa;
+    } else if (props.data.img === "freestyle_rails") {
+        image = Images.freestyle_rails;
+    } else {
+        image = Images.techno;
     }
 
     let buttonClass = "button";
@@ -39,7 +45,7 @@ const project = ( props ) => {
                     <form>
                         <input className = {buttonClass} disabled={disabled} type="button" value={props.data.buttonValue} onClick={open} />
                     </form>
-                    <a class="a" href={props.data.docs} target="_blank">Documentation</a>
+                    {props.data.docs !== null ? <a class="a" href={props.data.docs} target="_blank">Documentation</a> : <a></a>}
                     <a class="a" href={props.data.code} target="_blank">Code</a>
                 </div>
             </div>
