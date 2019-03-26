@@ -10,7 +10,8 @@ const images = {
     py: require('./python.png'),
     react: require('./react.png'),
     mongo: require('./mongo.png'),
-    linux: require('./linux.png')
+    linux: require('./linux.png'),
+    me: require('./IMG_0259.jpg')
 }
 
 export default images;

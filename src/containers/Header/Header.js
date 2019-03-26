@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
@@ -14,8 +15,10 @@ class Header extends Component {
             <div className="header">
                 <div className="overlay">
                     <div className="text">
-                        <h1>Projects</h1>
-                        <h3>Aaron Berns</h3>
+                        <h1>{this.props.heading}</h1>
+                        <Link to={this.props.url}>
+                            <h3>{this.props.link}</h3>
+                        </Link>
                         <input type="image" src={require("../../images/github.png")} className="Thumb" onClick={this.gitHandler}/>
                         <input type="image" src={require("../../images/linkedin.dms")} className="Thumb" onClick={this.linkedHandler}/>    
                         <a href="mailto:anberns@gmail.com"><img src={require("../../images/email.png")} className="Thumb"/></a>

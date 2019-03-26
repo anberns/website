@@ -3,12 +3,12 @@ import Header from '../../containers/Header/Header';
 import Footer from '../../containers/Footer/Footer';
 import Aux from '../../hoc/aux';
 import Projects from '../../containers/Projects/Projects';
-import './layout.css';
+import './projectPage.css';
 
-const layout = () => {
+const ProjectPage = () => {
     return (
         <Aux >
-            <Header />
+            <Header heading="Projects" link="About Me" url="/about"/>
             <Projects />
             <Footer />
         </Aux>
@@ -16,4 +16,4 @@ const layout = () => {
 
 }
 
-export default layout;
+export default ProjectPage;

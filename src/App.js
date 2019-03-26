@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import Homepage from './components/homepage/homepage';
-import Layout from './components/layout/layout';
+import ProjectPage from './components/projectPage/projectPage';
+import AboutPage from './components/aboutPage/aboutPage'
 import Aux from './hoc/aux';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
+  /*
   state = {
      home: true
   }
@@ -37,12 +40,17 @@ class App extends Component {
       <Layout />
     )
   }
+  */
+  render() {
 
     return (
-      <Aux>
-        {homepage}
-        {projectpage}
-      </Aux>
+      <Router>
+        <Aux>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/projects" component={ProjectPage} />
+          <Route exact path="/about" component={AboutPage} />
+        </Aux>
+      </Router>
     );
   }
 }
