@@ -16,7 +16,7 @@ class Header extends Component {
                 <div className="overlay">
                     <div className="text">
                         <h1>{this.props.heading}</h1>
-                        <Link to={this.props.url}>
+                        <Link className="no-dec" to={this.props.url}>
                             <h3>{this.props.link}</h3>
                         </Link>
                         <input type="image" src={require("../../images/github.png")} className="Thumb" onClick={this.gitHandler}/>
