@@ -9,7 +9,7 @@ const About = () => {
     <Aux>
       <div class="row">
           <div class="column smallify-left">
-              <img src={Images.me} className="img"/>
+              <img src={Images.me} className="img" alt="Aaron Berns"/>
           </div>
           <div class="column smallify-right">
               <h2>Aaron Berns</h2>
